@@ -36,6 +36,8 @@ group :development do
   gem "beaker"
   gem "beaker-rspec"
   gem "beaker-puppet_install_helper"
+  gem "beaker-docker"
+  gem "beaker-module_install_helper"
 end
 
 puppet_version = ENV['PUPPET_GEM_VERSION']
