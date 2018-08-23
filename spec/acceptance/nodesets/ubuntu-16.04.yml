@@ -1,0 +1,9 @@
+HOSTS:
+  ubuntu-16.04:
+    platform: ubuntu-16.04
+    hypervisor : docker
+    image: ubuntu:16.04
+    docker_preserve_image: true
+CONFIG:
+  type: foss
+  log_level: debug
