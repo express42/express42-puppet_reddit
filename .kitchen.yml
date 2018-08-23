@@ -1,0 +1,25 @@
+driver:
+  name: docker
+  privileged: true
+
+provisioner:
+  name: puppet_apply
+  manifests_path: manifests
+  modules_path: modules
+  # hiera_data_path: hieradata
+  # hiera_config_path: hiera.yml
+  # resolve_with_librarian_puppet: true
+
+
+platforms:
+  - name: ubuntu-16.04
+    driver_config:
+      image: ubuntu:16.04
+      run_command: '/sbin/init'
+      provision_command:
+        - systemctl set-default multi-user.target
+        - apt-get install -y net-tools
+
+suites:
+  - name: default
+    manifest: site.pp

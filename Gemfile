@@ -76,3 +76,11 @@ extra_gemfiles.each do |gemfile|
   end
 end
 # vim: syntax=ruby
+
+group :test_kitchen do
+  gem 'test-kitchen'
+  gem 'kitchen-puppet'
+  gem 'kitchen-docker'
+  gem 'kitchen-inspec'
+  gem 'inspec'
+end
