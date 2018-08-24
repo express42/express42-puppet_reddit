@@ -1,5 +1,7 @@
 ---
 image: ruby:2.4.4
+services:
+  - docker:dind
 
 stages:
   - syntax
