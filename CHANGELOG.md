@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file. The format 
 
 [Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/58c4e111d72a94cdd2b9261d2308b5141bfdf902...0.1.1)
 
-### UNCATEGORIZED PRS; GO LABEL THEM
+### Added
 
 - Feature new module structure [\#1](https://github.com/express42/express42-puppet_reddit/pull/1) ([WeitBelou](https://github.com/WeitBelou))
 
