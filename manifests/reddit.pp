@@ -10,7 +10,7 @@ class puppet_reddit::reddit {
   }
 
   service{'puma':
-    provider => 'service',
+    provider => 'systemd',
     enable => true,
     ensure => 'running',
   }
