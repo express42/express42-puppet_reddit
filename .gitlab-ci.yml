@@ -1,7 +1,12 @@
 ---
+image: ruby:2.4.4
+services:
+  - docker:dind
+
 stages:
   - syntax
   - unit
+  - integration
 
 cache:
   paths:
@@ -17,7 +22,6 @@ before_script:
 
 syntax lint metadata_lint check:symlinks check:git_ignore check:dot_underscore check:test_file rubocop-Ruby 2.4.4-Puppet ~> 5.5:
   stage: syntax
-  image: ruby:2.4.4
   script:
     - bundle exec rake syntax lint metadata_lint check:symlinks check:git_ignore check:dot_underscore check:test_file rubocop
   variables:
@@ -25,9 +29,14 @@ syntax lint metadata_lint check:symlinks check:git_ignore check:dot_underscore c
 
 parallel_spec-Ruby 2.4.4-Puppet ~> 5.5:
   stage: unit
-  image: ruby:2.4.4
   script:
     - bundle exec rake parallel_spec
   variables:
     PUPPET_GEM_VERSION: '~> 5.5'
 
+acceptance:
+  stage: integration
+  script:
+  - bundle exec rake beaker
+  variables:
+    PUPPET_GEM_VERSION: '~> 5.5'

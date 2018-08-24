@@ -14,10 +14,7 @@ PROJECT_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 RSpec.configure do |c|
   c.before :suite do
     hosts.each do |host|
-      # on host, puppet('module', 'install', 'puppetlabs-stdlib')
-      # on host, puppet('module', 'install', 'puppetlabs-java')
-      # on host, puppet('module', 'install', 'puppet-archive')
-      copy_module_to(host, source: PROJECT_ROOT, module_name: 'jenkins')
+      copy_module_to(host, source: PROJECT_ROOT, module_name: 'reddit')
     end
   end
 end
