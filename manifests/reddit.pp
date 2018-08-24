@@ -6,10 +6,11 @@
 #   include puppet_reddit::reddit
 class puppet_reddit::reddit {
   file{'/etc/systemd/system/puma.service':
-    source => 'puma.service'
+    source => 'puppet:///modules/puppet_reddit/puma.service'
   }
 
   service{'puma':
+    provider => 'service',
     enable => true,
     ensure => 'running',
   }
