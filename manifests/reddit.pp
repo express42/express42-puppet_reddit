@@ -5,24 +5,24 @@
 # @example
 #   include puppet_reddit::reddit
 class puppet_reddit::reddit {
-  package{'git':
+  package { 'git':
     provider => apt,
-    ensure => present,
+    ensure   => present,
   }
 
-  vcsrepo{'/root/reddit':
+  vcsrepo { '/root/reddit':
     provider => git,
-    ensure => latest,
-    source => 'https://github.com/express42/reddit'
+    ensure   => latest,
+    source   => 'https://github.com/express42/reddit'
   }
 
-  file{'/etc/systemd/system/puma.service':
+  file { '/etc/systemd/system/puma.service':
     source => 'puppet:///modules/puppet_reddit/puma.service'
   }
 
-  service{'puma':
-    provider => 'systemd',
-    enable => true,
-    ensure => 'running',
+  service { 'puma':
+    provider => systemd,
+    enable   => true,
+    ensure   => running,
   }
 }
