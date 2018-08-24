@@ -2,9 +2,21 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
-## [0.1.0](https://github.com/Express42/express42-puppet_reddit/tree/0.1.0) (2018-08-24)
+## [0.1.2](https://github.com/Express42/express42-puppet_reddit/tree/0.1.2) (2018-08-24)
 
-[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/58c4e111d72a94cdd2b9261d2308b5141bfdf902...0.1.0)
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/0.1.2...0.1.2)
+
+### UNCATEGORIZED PRS; GO LABEL THEM
+
+- Feature beaker gitlab [\#2](https://github.com/express42/express42-puppet_reddit/pull/2) ([WeitBelou](https://github.com/WeitBelou))
+
+## [0.1.2](https://github.com/Express42/express42-puppet_reddit/tree/0.1.2) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/0.1.1...0.1.2)
+
+## [0.1.1](https://github.com/Express42/express42-puppet_reddit/tree/0.1.1) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/58c4e111d72a94cdd2b9261d2308b5141bfdf902...0.1.1)
 
 ### UNCATEGORIZED PRS; GO LABEL THEM
 
