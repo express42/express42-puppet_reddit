@@ -1,5 +1,5 @@
 ---
-image: ruby:2.4.4
+image: docker
 services:
   - docker:dind
 
@@ -13,6 +13,7 @@ cache:
     - vendor/bundle
 
 before_script:
+  - apt-get update && apt-get install -y ruby
   - bundle -v
   - rm Gemfile.lock || true
   - gem update --system
