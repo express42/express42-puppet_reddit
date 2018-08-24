@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. The format 
 
 [Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/0.1.2...0.1.2)
 
-### UNCATEGORIZED PRS; GO LABEL THEM
+### Added
 
 - Feature beaker gitlab [\#2](https://github.com/express42/express42-puppet_reddit/pull/2) ([WeitBelou](https://github.com/WeitBelou))
 
