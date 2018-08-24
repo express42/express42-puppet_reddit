@@ -6,6 +6,7 @@ services:
 stages:
   - syntax
   - unit
+  - integration
 
 cache:
   paths:
@@ -26,13 +27,6 @@ syntax lint metadata_lint check:symlinks check:git_ignore check:dot_underscore c
   variables:
     PUPPET_GEM_VERSION: '~> 5.5'
 
-acceptance:
-  stage: test
-  script:
-    - bundle exec rake beaker
-  variables:
-    PUPPET_GEM_VERSION: '~> 5.5'
-
 parallel_spec-Ruby 2.4.4-Puppet ~> 5.5:
   stage: unit
   script:
@@ -40,3 +34,9 @@ parallel_spec-Ruby 2.4.4-Puppet ~> 5.5:
   variables:
     PUPPET_GEM_VERSION: '~> 5.5'
 
+acceptance:
+  stage: integration
+  script:
+  - bundle exec rake beaker
+  variables:
+    PUPPET_GEM_VERSION: '~> 5.5'
