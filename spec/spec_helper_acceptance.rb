@@ -15,7 +15,7 @@ RSpec.configure do |c|
   c.before :suite do
     hosts.each do |host|
       copy_module_to(host, source: PROJECT_ROOT, module_name: 'puppet_reddit')
-      on host, puppet('module install puppetlabs-vcsrepo'), {:acceptable_exit_codes => [0]}
+      on host, puppet('module install puppetlabs-vcsrepo'), :acceptable_exit_codes => [0]
     end
   end
 end
