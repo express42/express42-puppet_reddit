@@ -6,13 +6,13 @@
 #   include puppet_reddit::reddit
 class puppet_reddit::reddit {
   package { 'git':
-    provider => apt,
     ensure   => present,
+    provider => apt,
   }
 
   vcsrepo { '/root/reddit':
-    provider => git,
     ensure   => latest,
+    provider => git,
     source   => 'https://github.com/express42/reddit'
   }
 
@@ -21,8 +21,8 @@ class puppet_reddit::reddit {
   }
 
   service { 'puma':
+    ensure   => running,
     provider => systemd,
     enable   => true,
-    ensure   => running,
   }
 }
