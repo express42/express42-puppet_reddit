@@ -1,6 +1,6 @@
 {
   "name": "express42-puppet_reddit",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "Express42",
   "summary": "Example Puppet module for Reddit app",
   "license": "Apache-2.0",
