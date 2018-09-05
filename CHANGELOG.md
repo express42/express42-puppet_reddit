@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v0.1.11](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.11) (2018-09-05)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.10...v0.1.11)
+
+## [v0.1.10](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.10) (2018-09-05)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.9...v0.1.10)
+
+## [v0.1.9](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.9) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.8...v0.1.9)
+
+## [v0.1.8](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.8) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.7...v0.1.8)
+
+## [v0.1.7](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.7) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.6...v0.1.7)
+
+## [v0.1.6](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.6) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.5...v0.1.6)
+
+## [v0.1.5](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.5) (2018-08-24)
+
+[Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.4...v0.1.5)
+
 ## [v0.1.4](https://github.com/Express42/express42-puppet_reddit/tree/v0.1.4) (2018-08-24)
 
 [Full Changelog](https://github.com/Express42/express42-puppet_reddit/compare/v0.1.3...v0.1.4)
